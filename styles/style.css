@@ -1,0 +1,153 @@
+/*
+Theme Name: Avada Child
+Description: Child theme for Avada theme
+Author: ThemeFusion
+Author URI: https://theme-fusion.com
+Template: Avada
+Version: 1.0.0
+Text Domain:  Avada
+*/
+
+.avada_custom_slider {
+	min-width: 100vw;
+}
+
+.avada_custom_slider > .fusion-column-wrapper:first-child {
+	max-width: 1532px;
+	margin: 0 auto;
+}
+
+.avada_custom_slider > .fusion-column-wrapper:first-child .fusion-post-cards {
+	padding: 0 106px;
+}
+
+.avada_custom_slider .swiper-slide {
+	opacity: 0;
+	transition: opacity .4s, transform .45s ease !important;
+}
+
+.avada_custom_slider .swiper-slide img {
+	margin-bottom: 10px;
+}
+
+.avada_custom_slider .swiper-slide-active {
+	opacity: 1;
+}
+
+.avada_custom_slider .swiper-slide-active + .swiper-slide {
+	opacity: 1;
+}
+
+.avada_custom_slider .fusion-flex-align-items-center {
+	align-items: start !important;
+}
+
+.avada_custom_slider .swiper-slide .fusion-layout-column:last-child {
+	padding-top: 10px;
+}
+
+.avada_custom_slider .swiper-slide .fusion-layout-column:last-child p {
+	font-size: 15px;
+	line-height: 1.8;
+	font-weight: 500;
+}
+
+@media (max-width: 1400px) {
+	.avada_custom_slider > .fusion-column-wrapper:first-child .fusion-post-cards {
+		padding: 0 80px;
+	}
+}
+
+@media (max-width: 1199px) {
+	.avada_custom_slider > .fusion-column-wrapper:first-child .fusion-post-cards {
+		padding: 0 60px;
+	}
+
+	.avada_custom_slider .swiper-slide .fusion-layout-column:last-child p {
+		font-size: 15px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.avada_custom_slider > .fusion-column-wrapper:first-child .fusion-post-cards {
+		padding: 30px 0 0;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.avada_custom_slider .swiper-wrapper {
+		order: 2;
+	}
+
+	.avada_custom_slider .awb-swiper-button-next,
+	.avada_custom_slider .awb-swiper-button-prev {
+		position: relative;
+		top: auto;
+		left: auto;
+		right: auto;
+		right: 0;
+		order: 1;
+	}
+
+	.avada_custom_slider .awb-swiper-button-next {
+		order: 3;
+	}
+}
+
+@media (max-width: 767px) {
+	.avada_custom_slider > .fusion-column-wrapper:first-child .fusion-post-cards {
+		padding: 40px 0 0;
+	}
+}
+
+
+.donate-block {
+	display: flex;
+	gap: 20px;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.donate-block__item {
+	display: flex;
+	flex-direction: column;
+}
+
+.donate__text {
+	color: white;
+}
+
+.donate__title {
+	color: white;
+	font-weight: bold;
+	text-align: center;
+}
+
+.donate__img {
+	max-width: 100px;
+	flex: 1;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+}
+
+
+.donate__img img {
+	width: 100%;
+	object-fit: contain;
+	border-radius: 6px;
+}
+
+.donate__mark {
+	color: #b9301e;
+}
+
+@media (max-width: 1080px) {
+	.donate-block {
+		flex-direction: column;
+		gap: 60px;
+	}
+	.donate-block__item {
+		align-items: center;
+	}
+}
